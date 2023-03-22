@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> &#x1f3ae; Tic Tac Toe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Style the header banner */
+      .header {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        font-size: 5vh;
+        margin: -10px;
+        color: #110f0f;
+      }
+      /* Style the header banner icon */
+      .header-icon {
+        font-size: 4vh;
+        margin-right: 16px;
+      }
+      /* Center the buttons vertically and horizontally */
+      html, body {
+        height: 100%;
+        margin: 0;
+        background-color:#CCDFFD;
+        font-size: 2vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+      /* Style the text above the buttons */
+      .heading {
+        margin-bottom: 5vh;
+        font-size: 5vh;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+      }
+      /* Style the buttons */
+      .button {
+        margin: 5vh 0;
+        width : fit-content;
+        padding: 5vh 10vh;
+        border: 1px solid grey;
+        border-radius: 8px;
+        font-size: 3vh;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: transparent;
+        color: #333;
+      }
+      /* Change the button color on hover */
+      .button:hover {
+        background-color: #4CAF50;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-icon">🎮</div>
+      <div class="header-text">Tic Tac Toe</div>
+    </div>
+    <div class="container">
+      <div class="heading">Choose type of the Game</div>
+      <button class="button" onclick="pvp()">Player vs Player</button>
+      <button class="button" onclick="pvc()">Player vs Computer</button>
+    </div>
+  </body>
+<script>
+      function pvp() {
+			window.location.href = "/home" ;
+      }
+           function pvc() {
+			window.location.href = "/home" ;
+      }
+</script>
+</html>
